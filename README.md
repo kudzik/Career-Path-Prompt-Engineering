@@ -1,70 +1,60 @@
-# Career-Path-Prompt-Engineering
+# Model AI w kontekście Prompt Engineering
 
-## Wprowadzenie
+## Co to jest model AI?
 
-Sztuczna inteligencja (AI) staje się integralną częścią naszego życia, wpływając na różnorodne dziedziny, od technologii po medycynę. Jednym z kluczowych elementów tej rewolucji są modele językowe, które pozwalają maszynom rozumieć i generować ludzki język. W tym artykule przyjrzymy się kilku najważniejszym modelom AI, ich funkcjom i zastosowaniom, które kształtują naszą przyszłość.
+Model AI (Artificial Intelligence) to system komputerowy zaprojektowany do wykonywania zadań, które zazwyczaj wymagają ludzkiej inteligencji. Modele AI mogą przetwarzać dane, rozpoznawać wzorce, podejmować decyzje, a nawet przewidywać przyszłe zdarzenia na podstawie dostarczonych danych.
 
-## Najważniejsze Modele AI
+## Główne komponenty modelu AI
 
-### GPT-4 (OpenAI)
+1. **Dane treningowe**: Surowe informacje, które są wykorzystywane do trenowania modelu. Im więcej i lepszej jakości dane, tym dokładniejszy model.
+2. **Algorytm**: Zbiór reguł lub procedur, które model wykorzystuje do analizy danych i uczenia się.
+3. **Model wytrenowany**: Wynik procesu treningowego, który można wykorzystać do przewidywania lub klasyfikacji nowych danych.
+4. **Ocena i walidacja**: Proces sprawdzania, jak dobrze model radzi sobie z zadaniami na zestawach danych testowych, które nie były używane podczas treningu.
 
-GPT-4, czyli Generative Pre-trained Transformer 4, to zaawansowany model językowy opracowany przez OpenAI. Kontynuuje rozwój wcześniejszych wersji GPT, oferując wyższą precyzję i naturalność generowanego tekstu. Dzięki ogromnej liczbie parametrów, GPT-4 potrafi generować złożone i spójne teksty, rozumieć kontekst oraz odpowiadać na pytania.
+## Typy modeli AI
 
-#### Zastosowania GPT-4
+1. **Modele nadzorowane (supervised learning)**: Uczą się na oznaczonych danych, gdzie każdy przykład treningowy jest sparowany z odpowiednią odpowiedzią.
+2. **Modele nienadzorowane (unsupervised learning)**: Uczą się na nieoznaczonych danych, gdzie system próbuje znaleźć ukryte wzorce bez dostarczonych odpowiedzi.
+3. **Modele pół-nadzorowane (semi-supervised learning)**: Uczą się na mieszance oznaczonych i nieoznaczonych danych.
+4. **Modele wzmacniające (reinforcement learning)**: Uczą się na podstawie interakcji z otoczeniem, gdzie otrzymują nagrody lub kary za swoje akcje.
 
-- **Tworzenie treści:** Automatyczne pisanie artykułów, postów na blogach i opowiadań.
-- **Edukacja:** Pomoc w nauce, tworzenie materiałów edukacyjnych, odpowiadanie na pytania uczniów.
-- **Obsługa klienta:** Tworzenie zaawansowanych chatbotów, automatyzacja odpowiedzi na zapytania klientów.
-- **Analiza danych:** Przetwarzanie i analiza tekstów, ekstrakcja istotnych informacji z dokumentów.
+## Prompt Engineering
 
-### BERT (Google)
+Prompt Engineering to sztuka tworzenia i dostosowywania zapytań (promptów), które kierują modelem AI do wygenerowania pożądanych wyników. Jest to szczególnie ważne w pracy z modelami językowymi, takimi jak GPT-4.
 
-BERT, czyli Bidirectional Encoder Representations from Transformers, to model opracowany przez Google, który wykorzystuje dwukierunkowe kodowanie do lepszego zrozumienia kontekstu w tekście. BERT jest szczególnie skuteczny w zadaniach NLP (Natural Language Processing), takich jak klasyfikacja tekstu, odpowiadanie na pytania czy analiza sentymentu.
+## Jak efektywnie tworzyć prompty?
 
-#### Zastosowania BERT
+1. **Zrozumienie modelu**: Wiedza o tym, jak model działa i jakie dane zostały użyte do jego treningu.
+2. **Jasność i precyzja**: Formułowanie promptów w sposób jasny, konkretny i jednoznaczny.
+3. **Kontekst**: Dostarczanie odpowiedniego kontekstu, aby model mógł lepiej zrozumieć zapytanie.
+4. **Iteracja i testowanie**: Eksperymentowanie z różnymi promptami i iteracyjne doskonalenie ich na podstawie wyników.
 
-- **Analiza sentymentu:** Ocenianie opinii i nastrojów na podstawie recenzji użytkowników.
-- **Klasyfikacja tekstu:** Sortowanie wiadomości e-mail, filtrowanie treści online.
-- **Odpowiadanie na pytania:** Udzielanie odpowiedzi na pytania w aplikacjach wyszukiwawczych i asystentach głosowych.
+## Przykład zastosowania Prompt Engineering
 
-### T5 (Text-to-Text Transfer Transformer, Google)
+Załóżmy, że mamy model językowy i chcemy uzyskać od niego opis czegoś w prosty sposób:
 
-T5 to model opracowany przez Google, który przekształca różnorodne zadania NLP w format "tekst-do-tekstu". Oznacza to, że zarówno dane wejściowe, jak i wyjściowe są tekstami, co ułatwia modelowi naukę różnych zadań przy użyciu jednolitego podejścia.
+```markdown
+## Prompt:
+Opisz model AI w kontekście nauki do pozostania Prompt Engineering.
 
-#### Zastosowania T5
+## Odpowiedź:
+Model AI (Artificial Intelligence) to system komputerowy zaprojektowany do wykonywania zadań, które zazwyczaj wymagają ludzkiej inteligencji. Modele AI mogą przetwarzać dane, rozpoznawać wzorce, podejmować decyzje, a nawet przewidywać przyszłe zdarzenia na podstawie dostarczonych danych. Prompt Engineering to sztuka tworzenia i dostosowywania zapytań (promptów), które kierują modelem AI do wygenerowania pożądanych wyników.
+```
 
-- **Tłumaczenie maszynowe:** Automatyczne tłumaczenie tekstów między różnymi językami.
-- **Streszczanie:** Tworzenie streszczeń długich dokumentów i artykułów.
-- **Generowanie pytań:** Automatyczne tworzenie pytań na podstawie tekstu źródłowego.
+## Diagram Mermaid
 
-### RoBERTa (Facebook AI)
+Aby zilustrować proces działania modelu AI, możemy użyć diagramu Mermaid:
 
-RoBERTa, czyli Robustly Optimized BERT Pre-training Approach, to ulepszona wersja BERT opracowana przez Facebook AI. RoBERTa zwiększa wydajność i dokładność modelu poprzez optymalizację procesu pre-treningu i wykorzystanie większych zbiorów danych.
+```mermaid
+graph TD;
+    A[Dane Treningowe] --> B[Trenowanie Modelu];
+    B --> C[Model Wytrenowany];
+    C --> D[Ocena i Walidacja];
+    D --> E[Użycie Modelu];
+```
 
-#### Zastosowania RoBERTa
-
-- **Analiza tekstu:** Wykrywanie i klasyfikacja różnorodnych wzorców w tekście.
-- **Przetwarzanie języka naturalnego:** Ulepszanie systemów przetwarzania języka w aplikacjach takich jak tłumaczenia i asystenci głosowi.
-- **Ekstrakcja informacji:** Wydobywanie kluczowych informacji z dużych zbiorów dokumentów.
-
-## Jak Modele AI Rewolucjonizują Nasze Życie
-
-### Automatyzacja i Efektywność
-
-Modele AI znacząco zwiększają automatyzację procesów, pozwalając na szybkie i efektywne przetwarzanie dużych ilości danych. Dzięki nim możliwe jest automatyczne generowanie treści, tłumaczenie tekstów czy analiza sentymentu, co oszczędza czas i zasoby ludzkie.
-
-### Poprawa Obsługi Klienta
-
-Zaawansowane chatboty, wspierane przez modele AI, mogą skutecznie obsługiwać klientów 24/7, odpowiadać na pytania, rozwiązywać problemy i dostarczać spersonalizowane rekomendacje. To z kolei poprawia satysfakcję klientów i zwiększa ich lojalność.
-
-### Innowacje w Edukacji
-
-Modele AI wspierają edukację, oferując narzędzia do automatycznego tworzenia materiałów dydaktycznych, odpowiadania na pytania uczniów oraz analizowania wyników nauczania. Ułatwiają również dostęp do wiedzy poprzez tłumaczenia i streszczenia tekstów edukacyjnych.
-
-### Analiza i Przetwarzanie Danych
-
-Dzięki zaawansowanym modelom AI, firmy mogą efektywnie analizować dane tekstowe, identyfikować kluczowe informacje oraz przewidywać trendy. To wspiera podejmowanie lepszych decyzji biznesowych i opracowywanie strategii.
+Ten diagram pokazuje podstawowe etapy tworzenia i używania modelu AI.
 
 ## Podsumowanie
 
-Modele językowe AI, takie jak GPT-4, BERT, T5 i RoBERTa, reprezentują znaczący postęp w dziedzinie przetwarzania języka naturalnego. Ich różnorodne zastosowania w tworzeniu treści, analizie danych, edukacji, obsłudze klienta i wielu innych dziedzinach świadczą o ich wszechstronności i potencjale do dalszego rozwoju. Dzięki tym modelom, AI ma coraz większy wpływ na nasze codzienne życie, usprawniając procesy i otwierając nowe możliwości technologiczne. Przyszłość z AI wygląda obiecująco, a my jesteśmy świadkami tej rewolucji technologicznej.
+Model AI jest kluczowym narzędziem w dzisiejszej technologii, zdolnym do wykonywania zadań wymagających inteligencji. Prompt Engineering, czyli sztuka tworzenia efektywnych zapytań do modeli AI, jest niezwykle ważna dla uzyskiwania pożądanych wyników i maksymalizowania użyteczności tych modeli.
